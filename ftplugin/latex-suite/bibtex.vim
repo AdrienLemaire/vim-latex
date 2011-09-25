@@ -15,6 +15,7 @@ let s:b_standsfor = 'booktitle'
 let s:c_standsfor = 'chapter'
 let s:d_standsfor = 'edition'
 let s:e_standsfor = 'editor'
+let s:f_standsfor = 'url'  " u or w would be more appropriated, but already used
 let s:h_standsfor = 'howpublished'
 let s:i_standsfor = 'institution'
 let s:k_standsfor = 'isbn'
@@ -97,9 +98,9 @@ let s:{'misc'}_optional1="ath"
 let s:{'misc'}_optional2="myz"
 let s:{'misc'}_retval = '@MISC{' . s:key . ','."\n"
 
-let s:{'online'}_required=""
-let s:{'online'}_optional1="ath"
-let s:{'online'}_optional2="myz"
+let s:{'online'}_required="tf" " f is url
+let s:{'online'}_optional1="a"
+let s:{'online'}_optional2="my"
 let s:{'online'}_retval = '@ONLINE{' . s:key . ','."\n"
 
 let s:{'phdthesis'}_required="atry" " r is school
