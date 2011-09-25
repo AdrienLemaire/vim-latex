@@ -97,6 +97,11 @@ let s:{'misc'}_optional1="ath"
 let s:{'misc'}_optional2="myz"
 let s:{'misc'}_retval = '@MISC{' . s:key . ','."\n"
 
+let s:{'online'}_required=""
+let s:{'online'}_optional1="ath"
+let s:{'online'}_optional2="myz"
+let s:{'online'}_retval = '@ONLINE{' . s:key . ','."\n"
+
 let s:{'phdthesis'}_required="atry" " r is school
 let s:{'phdthesis'}_optional1="w" " w is address
 let s:{'phdthesis'}_optional2="umz" " u is type
@@ -164,6 +169,7 @@ function BibT(type, options, prompt)
 			\ 'manual'."\n".
 			\ 'msthesis'."\n".
 			\ 'misc'."\n".
+			\ 'online'."\n".
 			\ 'phdthesis'."\n".
 			\ 'proceedings'."\n".
 			\ 'techreport'."\n".
